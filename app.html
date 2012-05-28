@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>fred</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript" src="./jquery-1.7.1.min.js"></script>
+        <script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+        <script type="text/javascript" src="./underscore-min.js"></script>
+        <script type="text/javascript" src="./backbone-min.js"></script>
+        <script type="text/javascript" src="./app.js"></script>
+    </head>
+    <body>
+        <div class="app"></div>
+        <script id="userDetailViewTemplate" type="text/x-jquery-tmpl">
+            <div class="userDetailView">
+                <span >输入姓名</span>
+                <input class="userDetailViewName"  type="text" value="">
+                <button class="confirmButton">加入</button>
+            </div>
+        </script>
+
+        <script id="userViewTemplate" type="text/x-jquery-tmpl">
+            <li class="userView">
+                <span class="userViewName">${userViewName}</span>
+                <span class="userViewdelete">删除</span>
+            </li>
+        </script>
+    </body>
+</html>
